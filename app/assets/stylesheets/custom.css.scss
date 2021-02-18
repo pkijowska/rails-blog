@@ -1,5 +1,38 @@
 @import "bootstrap";
 
 .navbar {
-  background: #fec89a !important;
+  background: #d0b8ac !important;
+}
+
+.bg-footer {
+  background: #efe5dc !important;
+}
+
+body {
+  background: #efe5dc;
+}
+
+#home-container {
+  margin-top: 1rem;
+}
+
+.jumbotron {
+  background: #f5ebe1;
+  // color: #ffedd8;
+}
+
+.btn-home {
+  margin-bottom: 1rem;
+}
+
+html,body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
 }
