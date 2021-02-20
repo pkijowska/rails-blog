@@ -10,25 +10,20 @@
         <% end %>
       </ul>
       <% end %>
-
       <%= form_with(model: @article, local: true, class: 'shadow p-3 mb-3 bg-info rounded') do |f| %>
       <div class="form-group row">
         <p><%= f.label :title, class: 'col-2 col-form-label text-light' %>
         <div class="col-10">
-        <%= f.text_field :title, class: 'form-control shadow rounded' %>
+          <%= f.text_field :title, class: 'form-control shadow rounded' %>
         </div>
       </div>
-      </p>
-      <p>
-        <div class="form-group row">
-          <%= f.label :description %>
-          <br/>
-          <div class="col-10">
-            <%= f.text_area :description %>
-          </div>
+      <div class="form-group row">
+        <%= f.label :description %>
+        <br/>
+        <div class="col-10">
+          <%= f.text_area :description %>
         </div>
-      </p>
-
+      </div>
       <div class="form-group row justify-content-center">
         <div class="col-10">
           <%= f.submit class:'btn btn-outline-light btn-lg ' %>
