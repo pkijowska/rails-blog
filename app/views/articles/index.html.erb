@@ -1,5 +1,6 @@
 <div class="container">
   <h1 class="text-center mt-4">Articles page</h1>
+  <%= will_paginate @articles %>
   <%= render 'article' %>
   <p><%= link_to 'Create new article', new_article_path %></p>
 </div>
